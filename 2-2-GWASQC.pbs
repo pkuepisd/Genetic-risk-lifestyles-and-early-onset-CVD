@@ -1,0 +1,18 @@
+# QC of the GWAS data (pbs file)
+codepath=~/PhD/code 
+CONDA_PATH=~/miniconda3/bin
+source $CONDA_PATH/activate Renv
+Rscript $codepath/2-3-GWASQC.R \
+    --ssf $gwasfile \
+    --ssinfo $ssfinfo \
+    --ssmaf $ssfmaf \
+    --target $target \
+    --delete_ambiguous $da \
+    --delete_indel $di \
+    --ck_info $ckinfo \
+    --INFO $ckinfo2 \
+    --ck_freq $ckfreq \
+    --FREQ $ckfreq2 \
+    --ck_hwe $ckhwe \
+    --HWP $ckhwe2 \
+    --qctype $qctype

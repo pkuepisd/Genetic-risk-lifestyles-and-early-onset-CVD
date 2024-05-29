@@ -1,0 +1,1 @@
+python $pydir/PRScs.py --ref_dir=$refdir --bim_prefix=$bimdir/chr${chr} --sst_file=$ssfdir/chr${chr}.txt --n_gwas=$N --chrom=${chr} --out_dir=$ssfdir/chr${chr} --seed=1548

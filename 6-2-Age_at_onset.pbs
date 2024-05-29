@@ -1,0 +1,4 @@
+# Associations of genetic risk and lifestyles with different age-onset of CVD (pbs file) 
+CONDA_PATH=~/miniconda3/bin
+source $CONDA_PATH/activate Renv
+R --no-save <~/PhD/code/6-1-Age_at_onset.sh $ep $index

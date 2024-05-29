@@ -1,0 +1,7 @@
+PLINKpath=~/PhD/Project1/CKB_PLINK
+CSpath=~/PhD/Project1/GWASdata/${gwas}/${gwas}.org.stdqc1_chr/CS
+/public/software/plink-1.90/plink \
+	--bfile $PLINKpath/chr$CHR \
+	--score $CSpath/chr${CHR}_${phi}.txt 2 4 6 sum \
+	--out $CSpath/chr${CHR}_${phi}.prs \
+	--threads 20

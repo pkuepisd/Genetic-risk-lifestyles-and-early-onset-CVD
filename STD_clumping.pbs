@@ -1,0 +1,10 @@
+/public/software/plink-1.90/plink \
+    --bfile $ref \
+    --clump-p1 1 \
+    --clump-r2 $r2 \
+    --clump-kb 250 \
+    --clump $BaseFile \
+    --clump-snp-field SNP \
+    --clump-field PVAL \
+    --out $OUT
+ 

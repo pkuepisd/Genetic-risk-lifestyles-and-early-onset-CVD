@@ -1,0 +1,15 @@
+#!/bin/bash
+CONDA_PATH=~/miniconda3/bin
+source $CONDA_PATH/activate Renv
+Rscript ~/PhD/Project1/code/PGSFileStandardQC.R \
+    --pgsf ~/PhD/Project1/PGSdata/${pgs}.txt.org \
+    --target ~/PhD/Project1/ckb_info_table_modified_V3.txt \
+    --delete_ambiguous TRUE \
+    --delete_indel TRUE \
+    --ck_info TRUE \
+    --INFO $INFO \
+    --ck_freq TRUE \
+    --FREQ $FREQ \
+    --ck_hwe TRUE \
+    --HWP $HWP
+
