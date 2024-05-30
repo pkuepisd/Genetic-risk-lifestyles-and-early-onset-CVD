@@ -19,7 +19,7 @@ if (strsplit(gwas,"_")[[1]][2]=="ALL" | strsplit(gwas,"_")[[1]][2]=="ALL2"){
 	refdir<- "/public/data/1000G_EUR"
 } else {
 	LDblocks <- "ASN.hg19"
-	refdir<- "/public/home/yangsongchun/1000genomes/phase3v5a/EAS"
+	refdir<- "/public/data/1000G_EAS"
 }
 
 gwas_samplesize<- read.csv("~/PhD/Project1/GWAS_samplesize.csv",header=T)
